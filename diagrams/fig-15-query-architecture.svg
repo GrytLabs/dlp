@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="700" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 15</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Query Architecture — Five Families</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">44 query patterns organized by what they answer — the read surface of the world model</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FAMILY A: LINEAGE QUERIES                    -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="115" width="840" height="80" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="143" font-family="'Inter', sans-serif" font-size="15" fill="#93c5fd" font-weight="700">A</text>
+  <text x="105" y="143" font-family="'Inter', sans-serif" font-size="13" fill="#93c5fd" font-weight="600">Lineage Queries</text>
+  <text x="330" y="143" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">"Who decided what, based on what evidence, under what authority?"</text>
+  <text x="105" y="165" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Decision chains, authority delegation traces, evidence provenance, commitment fulfillment tracking</text>
+  <text x="105" y="182" font-family="'Inter', sans-serif" font-size="8" fill="#3b82f6" opacity="0.6">Core governance audit surface — every state transformation is queryable</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FAMILY B: CONFORMANCE QUERIES                -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="210" width="840" height="80" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#10b981" stroke-width="2"/>
+  <text x="80" y="238" font-family="'Inter', sans-serif" font-size="15" fill="#6ee7b7" font-weight="700">B</text>
+  <text x="105" y="238" font-family="'Inter', sans-serif" font-size="13" fill="#6ee7b7" font-weight="600">Conformance Queries</text>
+  <text x="340" y="238" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">"Does the current state satisfy governance requirements?"</text>
+  <text x="105" y="260" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Invariant validation status (B1-B10), constraint satisfaction, SHACL two-pass results, gap assessment</text>
+  <text x="105" y="277" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" opacity="0.6">Continuous governance health monitoring — the enforcement surface</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FAMILY C: PROJECTION QUERIES                 -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="305" width="840" height="80" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#f59e0b" stroke-width="2"/>
+  <text x="80" y="333" font-family="'Inter', sans-serif" font-size="15" fill="#fcd34d" font-weight="700">C</text>
+  <text x="105" y="333" font-family="'Inter', sans-serif" font-size="13" fill="#fcd34d" font-weight="600">Projection Queries</text>
+  <text x="325" y="333" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">"What does the governance landscape look like from this perspective?"</text>
+  <text x="105" y="355" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Policy projection across seven domains (§13), stakeholder views, deviation measurement, coverage analysis</text>
+  <text x="105" y="372" font-family="'Inter', sans-serif" font-size="8" fill="#f59e0b" opacity="0.6">Different views of the same model — blueprint, elevation, electrical plan</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FAMILY D: EPISTEMIC QUERIES                  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="400" width="840" height="80" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#a855f7" stroke-width="2"/>
+  <text x="80" y="428" font-family="'Inter', sans-serif" font-size="15" fill="#c4b5fd" font-weight="700">D</text>
+  <text x="105" y="428" font-family="'Inter', sans-serif" font-size="13" fill="#c4b5fd" font-weight="600">Epistemic Queries</text>
+  <text x="325" y="428" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">"What is the epistemic status of this knowledge?"</text>
+  <text x="105" y="450" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Truth type distribution, verification states, claims graduation progress, confidence levels, Opaque boundary status</text>
+  <text x="105" y="467" font-family="'Inter', sans-serif" font-size="8" fill="#a855f7" opacity="0.6">The knowledge quality surface — what do we know, how well, and how do we know it?</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FAMILY E: OPERATIONAL QUERIES                -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="495" width="840" height="80" rx="12" fill="#1e293b" fill-opacity="0.5" stroke="#06b6d4" stroke-width="2"/>
+  <text x="80" y="523" font-family="'Inter', sans-serif" font-size="15" fill="#67e8f9" font-weight="700">E</text>
+  <text x="105" y="523" font-family="'Inter', sans-serif" font-size="13" fill="#67e8f9" font-weight="600">Operational Queries</text>
+  <text x="330" y="523" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">"What is happening in the substrate right now?"</text>
+  <text x="105" y="545" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Active sessions, pending signals, IQ resolution status, integration pipeline throughput, capacity utilization</text>
+  <text x="105" y="562" font-family="'Inter', sans-serif" font-size="8" fill="#06b6d4" opacity="0.6">Real-time operational awareness — the substrate's heartbeat</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CROSS-CUTTING NOTES (bottom)                 -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="600" width="840" height="60" rx="10" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="622" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">QUERY ARCHITECTURE CONSTRAINTS</text>
+  <text x="80" y="642" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">All queries are read-only — queries cannot modify substrate state. All queries respect authority scope — actors see only what their delegation permits.</text>
+  <text x="80" y="655" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Query results carry truth type metadata — consumers know the epistemic quality of every returned value.</text>
+
+  <!-- Footer -->
+  <text x="480" y="695" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §28 Query Architecture · Five Families · 44 Query Patterns</text>
+</svg>

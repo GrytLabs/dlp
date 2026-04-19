@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 750" width="960" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="750" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 11</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Ten Behavioral Invariants</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Conservation laws that the system enforces on every write — grouped by what they protect</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CLUSTER 1: RESOURCE INTEGRITY            -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="105" width="860" height="155" rx="14" fill="#3b82f6" fill-opacity="0.05" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="70" y="128" font-family="'Inter', sans-serif" font-size="11" fill="#3b82f6" font-weight="600" letter-spacing="0.08em">RESOURCE INTEGRITY</text>
+  <text x="70" y="143" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Ensures work and commitments are always backed by real resources</text>
+
+  <!-- B1 -->
+  <rect x="70" y="158" width="410" height="85" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="90" y="180" font-family="'Inter', sans-serif" font-size="13" fill="#93c5fd" font-weight="600">B1 — Conservation of Commitment</text>
+  <text x="90" y="200" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">No work without commitment</text>
+  <text x="90" y="220" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every work product traces to an explicit commitment.</text>
+  <text x="90" y="232" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">You can't do something nobody agreed to do.</text>
+
+  <!-- B2 -->
+  <rect x="500" y="158" width="390" height="85" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="180" font-family="'Inter', sans-serif" font-size="13" fill="#93c5fd" font-weight="600">B2 — Conservation of Capacity</text>
+  <text x="520" y="200" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">No commitment beyond capacity</text>
+  <text x="520" y="220" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Commitments are bounded by verifiable capacity.</text>
+  <text x="520" y="232" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">You can't promise what you can't deliver.</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CLUSTER 2: EPISTEMIC INTEGRITY           -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="275" width="860" height="230" rx="14" fill="#10b981" fill-opacity="0.05" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="70" y="298" font-family="'Inter', sans-serif" font-size="11" fill="#10b981" font-weight="600" letter-spacing="0.08em">EPISTEMIC INTEGRITY</text>
+  <text x="70" y="313" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Ensures decisions are grounded in authority, context, and verified knowledge origins</text>
+
+  <!-- B3 -->
+  <rect x="70" y="328" width="400" height="72" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="90" y="350" font-family="'Inter', sans-serif" font-size="13" fill="#6ee7b7" font-weight="600">B3 — Conservation of Authority</text>
+  <text x="90" y="370" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">No decision without authority</text>
+  <text x="90" y="387" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every decision is legitimized by a traceable authority chain.</text>
+
+  <!-- B4 -->
+  <rect x="490" y="328" width="400" height="72" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="510" y="350" font-family="'Inter', sans-serif" font-size="13" fill="#6ee7b7" font-weight="600">B4 — Conservation of Context</text>
+  <text x="510" y="370" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">No decision without context</text>
+  <text x="510" y="387" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Decisions must reference the account state at decision time.</text>
+
+  <!-- B10 — highlighted as the flagship -->
+  <rect x="70" y="415" width="820" height="75" rx="10" fill="#451a03" fill-opacity="0.3" stroke="#f59e0b" stroke-width="2"/>
+  <text x="90" y="440" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24" font-weight="700">B10 — Conservation of Epistemic Origin</text>
+  <text x="90" y="460" font-family="'Inter', sans-serif" font-size="12" fill="#fcd34d">AI output cannot self-promote — human review is structurally required</text>
+  <text x="90" y="478" font-family="'Inter', sans-serif" font-size="9" fill="#fcd34d" opacity="0.7">No architectural path exists for AI-generated content to bypass human epistemic judgment. Added in v2.0.0.</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CLUSTER 3: GOVERNANCE ROUTING            -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="520" width="860" height="205" rx="14" fill="#8b5cf6" fill-opacity="0.05" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.35"/>
+  <text x="70" y="543" font-family="'Inter', sans-serif" font-size="11" fill="#8b5cf6" font-weight="600" letter-spacing="0.08em">GOVERNANCE ROUTING</text>
+  <text x="70" y="558" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Ensures the governance graph stays connected, honest, and responsive</text>
+
+  <!-- B5 -->
+  <rect x="70" y="573" width="255" height="60" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="90" y="594" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">B5 — Delegation Chain</text>
+  <text x="90" y="612" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Authority delegation must be traceable</text>
+
+  <!-- B6 -->
+  <rect x="340" y="573" width="270" height="60" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="360" y="594" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">B6 — Constraint Binding</text>
+  <text x="360" y="612" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Constraints bind to all governed primitives</text>
+
+  <!-- B7 -->
+  <rect x="625" y="573" width="265" height="60" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="645" y="594" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">B7 — Evidence Chain</text>
+  <text x="645" y="612" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Work must produce evidence</text>
+
+  <!-- B8 -->
+  <rect x="70" y="648" width="410" height="60" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="90" y="669" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">B8 — Account Fidelity</text>
+  <text x="90" y="687" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Account state must reflect reality</text>
+
+  <!-- B9 -->
+  <rect x="500" y="648" width="390" height="60" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="669" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">B9 — Deviation Response</text>
+  <text x="520" y="687" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Deviations must trigger a governance response</text>
+
+  <!-- Footer -->
+  <text x="480" y="745" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · Ten Conservation Laws · Three Functional Clusters · Enforced on Every Write</text>
+</svg>

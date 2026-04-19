@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" width="960" height="780">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <marker id="arr-blue" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#60a5fa"/>
+    </marker>
+    <marker id="arr-amber" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#fbbf24"/>
+    </marker>
+    <marker id="arr-green" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#34d399"/>
+    </marker>
+    <marker id="arr-cyan" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#22d3ee"/>
+    </marker>
+    <marker id="arr-pink" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#f472b6"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="780" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 4</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Substrate Lifecycle Architecture</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">One irreversible entry point, one continuous cycle — Configure, Operate, Plan, Learn</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- GENESIS — left side, entry point             -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Genesis node -->
+  <rect x="60" y="280" width="180" height="110" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="150" y="310" font-family="'Inter', sans-serif" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="700">Genesis</text>
+  <text x="150" y="330" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">One-time, irreversible</text>
+  <text x="150" y="348" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Human with root authority</text>
+  <text x="150" y="366" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle" font-style="italic">7 genesis objects created atomically</text>
+  <text x="150" y="378" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle" font-style="italic">Authority chain established</text>
+
+  <!-- One-time label -->
+  <rect x="95" y="260" width="110" height="18" rx="9" fill="#451a03" fill-opacity="0.6" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="150" y="273" font-family="'Inter', sans-serif" font-size="8" fill="#fbbf24" text-anchor="middle" font-weight="600" letter-spacing="0.1em">ENTRY POINT</text>
+
+  <!-- Arrow from Genesis to Configure -->
+  <path d="M240,335 L295,335" stroke="#fbbf24" stroke-width="2" fill="none" marker-end="url(#arr-amber)"/>
+  <text x="268" y="328" font-family="'Inter', sans-serif" font-size="8" fill="#fbbf24" text-anchor="middle" opacity="0.7">first time</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- THE CYCLE — four stages in a rounded square  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Cycle background -->
+  <rect x="300" y="140" width="600" height="480" rx="30" fill="#3b82f6" fill-opacity="0.03" stroke="#334155" stroke-width="1" stroke-dasharray="8,4"/>
+
+  <!-- Cycle label -->
+  <text x="600" y="165" font-family="'Inter', sans-serif" font-size="10" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="0.1em">CONTINUOUS CYCLE</text>
+
+  <!-- ─── CONFIGURE (top-left of cycle) ─── -->
+  <rect x="340" y="200" width="220" height="130" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#3b82f6" stroke-width="2"/>
+  <text x="450" y="230" font-family="'Inter', sans-serif" font-size="15" fill="#93c5fd" text-anchor="middle" font-weight="700">Configure</text>
+  <text x="450" y="252" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Populate organizational context</text>
+  <text x="450" y="272" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Profile assessment (EAS/BAS/PAS)</text>
+  <text x="450" y="288" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Primitive tier activation</text>
+  <text x="450" y="304" font-family="'Inter', sans-serif" font-size="8" fill="#3b82f6" text-anchor="middle" opacity="0.6">Primary: Capture + Compose</text>
+
+  <!-- ─── OPERATE (top-right of cycle) ─── -->
+  <rect x="640" y="200" width="220" height="130" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#10b981" stroke-width="2"/>
+  <text x="750" y="230" font-family="'Inter', sans-serif" font-size="15" fill="#6ee7b7" text-anchor="middle" font-weight="700">Operate</text>
+  <text x="750" y="252" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Steady-state governance</text>
+  <text x="750" y="272" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">B1-B10 on every transformation</text>
+  <text x="750" y="288" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Integration + Capture continuous</text>
+  <text x="750" y="304" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" text-anchor="middle" opacity="0.6">Primary: Compose + Enforce + Project</text>
+
+  <!-- ─── PLAN (bottom-right of cycle) ─── -->
+  <rect x="640" y="430" width="220" height="130" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#06b6d4" stroke-width="2"/>
+  <text x="750" y="460" font-family="'Inter', sans-serif" font-size="15" fill="#67e8f9" text-anchor="middle" font-weight="700">Plan</text>
+  <text x="750" y="482" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Risk-informed allocation</text>
+  <text x="750" y="502" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">ERKIA materiality assessment</text>
+  <text x="750" y="518" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Signal classification by type</text>
+  <text x="750" y="534" font-family="'Inter', sans-serif" font-size="8" fill="#06b6d4" text-anchor="middle" opacity="0.6">Primary: Project + Adapt (emerging)</text>
+
+  <!-- ─── LEARN (bottom-left of cycle) ─── -->
+  <rect x="340" y="430" width="220" height="130" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#a855f7" stroke-width="2"/>
+  <text x="450" y="460" font-family="'Inter', sans-serif" font-size="15" fill="#c4b5fd" text-anchor="middle" font-weight="700">Learn</text>
+  <text x="450" y="482" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Double-loop adaptation</text>
+  <text x="450" y="502" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Examine governing variables</text>
+  <text x="450" y="518" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Reconfiguration directives</text>
+  <text x="450" y="534" font-family="'Inter', sans-serif" font-size="8" fill="#a855f7" text-anchor="middle" opacity="0.6">Primary: Adapt</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CYCLE ARROWS                                 -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Configure → Operate (top) -->
+  <path d="M565,260 L635,260" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arr-green)"/>
+  <text x="600" y="252" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">governance</text>
+  <text x="600" y="262" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">activation</text>
+
+  <!-- Operate → Plan (right) -->
+  <path d="M755,335 L755,425" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arr-cyan)"/>
+  <text x="770" y="383" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" transform="rotate(90, 770, 383)">threshold crossed</text>
+
+  <!-- Plan → Learn (bottom) -->
+  <path d="M635,495 L565,495" stroke="#22d3ee" stroke-width="2" fill="none" marker-end="url(#arr-pink)"/>
+  <text x="600" y="488" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">double-loop</text>
+
+  <!-- Learn → Configure (left) -->
+  <path d="M445,425 L445,335" stroke="#a855f7" stroke-width="2" fill="none" marker-end="url(#arr-blue)"/>
+  <text x="430" y="383" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" transform="rotate(-90, 430, 383)">reconfigure</text>
+
+  <!-- Plan → Operate (single-loop shortcut) -->
+  <path d="M830,430 C870,400 870,340 830,330" stroke="#22d3ee" stroke-width="1.5" fill="none" stroke-dasharray="4,3" stroke-opacity="0.5" marker-end="url(#arr-green)"/>
+  <text x="878" y="380" font-family="'Inter', sans-serif" font-size="8" fill="#67e8f9" opacity="0.6">single-</text>
+  <text x="878" y="390" font-family="'Inter', sans-serif" font-size="8" fill="#67e8f9" opacity="0.6">loop</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SPAWN PATTERN (bottom)                       -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Spawn arrow from Plan -->
+  <path d="M750,565 L750,625" stroke="#f472b6" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr-pink)"/>
+
+  <rect x="650" y="630" width="200" height="60" rx="10" fill="#1e293b" fill-opacity="0.4" stroke="#f472b6" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="750" y="653" font-family="'Inter', sans-serif" font-size="11" fill="#f472b6" text-anchor="middle" font-weight="600">Spawn</text>
+  <text x="750" y="670" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">New Configure for new context</text>
+  <text x="750" y="683" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle" font-style="italic">Beer's recursion — new viable system</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIRST-TIME SEQUENCE (bottom-left)            -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="630" width="520" height="80" rx="10" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="653" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">FIRST-TIME SEQUENCE</text>
+  <text x="80" y="673" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Genesis → Configure → Governance Activation (§12) → Integration onboarding → Operate</text>
+  <text x="80" y="693" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">After first-time sequence, the substrate lives in the four-stage cycle indefinitely</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIVE FUNCTIONS LEGEND (very bottom)          -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="730" width="840" height="30" rx="8" fill="#1e293b" fill-opacity="0.3"/>
+  <text x="80" y="749" font-family="'Inter', sans-serif" font-size="8" fill="#475569" font-weight="600" letter-spacing="0.1em">FIVE FUNCTIONS</text>
+  <text x="195" y="749" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Capture · Compose · Enforce · Project · Adapt</text>
+  <text x="530" y="749" font-family="'Inter', sans-serif" font-size="8" fill="#475569">— each operates at varying intensity across stages (Table 18.2.2)</text>
+
+  <!-- Footer -->
+  <text x="480" y="775" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §18 Integration Engine · Substrate Lifecycle Architecture</text>
+</svg>

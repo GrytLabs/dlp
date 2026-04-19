@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="960" height="680">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="680" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 12</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Entity Licensing Architecture</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Three-layer IP stack — protocol, platform, application — with split-license model</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LAYER 1: PROTOCOL (bottom — foundation)      -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="80" y="430" width="800" height="145" rx="16" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-width="2"/>
+  <text x="100" y="458" font-family="'Inter', sans-serif" font-size="10" fill="#3b82f6" font-weight="600" letter-spacing="0.1em">LAYER 1 — PROTOCOL</text>
+  <text x="100" y="473" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Open source · Community-developed · Patent-protected</text>
+
+  <!-- DLP-Core -->
+  <rect x="110" y="488" width="360" height="72" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#10b981" stroke-width="1.5"/>
+  <text x="130" y="512" font-family="'Inter', sans-serif" font-size="13" fill="#6ee7b7" font-weight="700">dlp-core</text>
+  <text x="260" y="512" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Structural grammar</text>
+  <text x="130" y="532" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">19 primitives, 10 invariants, state model</text>
+  <text x="130" y="548" font-family="'SF Mono', monospace" font-size="10" fill="#10b981" font-weight="600">Apache 2.0</text>
+
+  <!-- DLP-World-Model -->
+  <rect x="490" y="488" width="370" height="72" rx="10" fill="#1e293b" fill-opacity="0.6" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="510" y="512" font-family="'Inter', sans-serif" font-size="13" fill="#c4b5fd" font-weight="700">dlp-worldmodel</text>
+  <text x="660" y="512" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Reasoning layer</text>
+  <text x="510" y="532" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Composition logic, projection surfaces</text>
+  <text x="510" y="548" font-family="'SF Mono', monospace" font-size="10" fill="#a855f7" font-weight="600">AGPL</text>
+  <text x="560" y="548" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">(copyleft, dual-license retained)</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LAYER 2: PLATFORM (middle)                   -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="130" y="260" width="700" height="140" rx="16" fill="#f59e0b" fill-opacity="0.05" stroke="#f59e0b" stroke-width="2"/>
+  <text x="150" y="288" font-family="'Inter', sans-serif" font-size="10" fill="#f59e0b" font-weight="600" letter-spacing="0.1em">LAYER 2 — PLATFORM (ProtoLex)</text>
+  <text x="150" y="303" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Licensed substrate implementation · Patent-backed · Revenue layer</text>
+
+  <rect x="160" y="318" width="300" height="60" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#fbbf24" stroke-width="1"/>
+  <text x="180" y="340" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" font-weight="600">Substrate Implementation</text>
+  <text x="180" y="358" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">SDK, workbench, query API, sessions</text>
+  <text x="180" y="372" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" font-style="italic">§26-§30 implementation</text>
+
+  <rect x="490" y="318" width="310" height="60" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#fbbf24" stroke-width="1"/>
+  <text x="510" y="340" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" font-weight="600">License Tiers</text>
+  <text x="510" y="358" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Profile scope (EAS/BAS/PAS), instance caps</text>
+  <text x="510" y="372" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" font-style="italic">Constraint composition: monotonically tightening</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LAYER 3: APPLICATION (top)                   -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="180" y="110" width="600" height="120" rx="16" fill="#10b981" fill-opacity="0.05" stroke="#10b981" stroke-width="2"/>
+  <text x="200" y="138" font-family="'Inter', sans-serif" font-size="10" fill="#10b981" font-weight="600" letter-spacing="0.1em">LAYER 3 — APPLICATION (Customer-Owned)</text>
+  <text x="200" y="153" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">No platform claims on customer output · Build, configure, own</text>
+
+  <rect x="210" y="168" width="170" height="45" rx="8" fill="#1e293b" fill-opacity="0.4" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="295" y="187" font-family="'Inter', sans-serif" font-size="10" fill="#6ee7b7" text-anchor="middle" font-weight="600">Domain Tools</text>
+  <text x="295" y="203" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Customer-built workflows</text>
+
+  <rect x="400" y="168" width="170" height="45" rx="8" fill="#1e293b" fill-opacity="0.4" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="485" y="187" font-family="'Inter', sans-serif" font-size="10" fill="#6ee7b7" text-anchor="middle" font-weight="600">Methodologies</text>
+  <text x="485" y="203" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Org-specific configurations</text>
+
+  <rect x="590" y="168" width="170" height="45" rx="8" fill="#1e293b" fill-opacity="0.4" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="675" y="187" font-family="'Inter', sans-serif" font-size="10" fill="#6ee7b7" text-anchor="middle" font-weight="600">Governance Configs</text>
+  <text x="675" y="203" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Owned without encumbrance</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PRECEDENCE NOTE (bottom)                     -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="80" y="600" width="800" height="48" rx="8" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="480" y="620" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0" text-anchor="middle" font-weight="600">Constraint Precedence: Protocol → License → Organization</text>
+  <text x="480" y="638" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Higher layers cannot circumvent lower-layer constraints. No configuration overrides invariants. No license overrides protocol.</text>
+
+  <!-- Footer -->
+  <text x="480" y="675" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §24-§25 Entity Licensing · Three-Layer IP Stack · Split-License Model</text>
+</svg>

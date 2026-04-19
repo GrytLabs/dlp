@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <marker id="arr-blue" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#60a5fa"/>
+    </marker>
+    <marker id="arr-amber" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#fbbf24"/>
+    </marker>
+    <marker id="arr-green" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="720" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 2</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">The Governance Graph</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Nine core primitives connected by thirteen typed relationships</text>
+
+  <!--
+    LAYOUT — organic constellation with Decision at gravitational center
+    Intent:      (480, 155)
+    Authority:   (175, 265)
+    Commitment:  (715, 230)
+    Decision:    (410, 395)   center of gravity
+    Capacity:    (790, 380)
+    Account:     (185, 505)
+    Work:        (660, 500)
+    Evidence:    (465, 600)
+    Constraint:  orbiting ring
+  -->
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- EDGES (drawn first, under nodes)         -->
+  <!-- ════════════════════════════════════════ -->
+
+  <!-- Intent → Commitment  "motivates" -->
+  <path d="M530,165 C600,165 660,200 700,220" stroke="#60a5fa" stroke-width="1.5" fill="none" stroke-opacity="0.5" marker-end="url(#arr-blue)"/>
+  <text x="620" y="182" font-family="'Inter', sans-serif" font-size="9" fill="#60a5fa" opacity="0.7" transform="rotate(-12, 620, 182)">motivates</text>
+
+  <!-- Intent → Decision  "frames" -->
+  <path d="M460,175 C420,240 410,310 410,375" stroke="#60a5fa" stroke-width="1.5" fill="none" stroke-opacity="0.4" marker-end="url(#arr-blue)"/>
+  <text x="398" y="280" font-family="'Inter', sans-serif" font-size="9" fill="#60a5fa" opacity="0.6">frames</text>
+
+  <!-- Commitment → Work  "authorizes" (enforced by B1) -->
+  <path d="M720,255 C710,340 680,430 665,480" stroke="#fbbf24" stroke-width="2" fill="none" stroke-opacity="0.5" marker-end="url(#arr-amber)"/>
+  <text x="710" y="370" font-family="'Inter', sans-serif" font-size="9" fill="#fbbf24" opacity="0.7">authorizes</text>
+  <text x="710" y="382" font-family="'Inter', sans-serif" font-size="7" fill="#fbbf24" opacity="0.45">B1</text>
+
+  <!-- Commitment → Capacity  "requires" (enforced by B2) -->
+  <path d="M740,250 C760,290 780,330 785,360" stroke="#fbbf24" stroke-width="2" fill="none" stroke-opacity="0.5" marker-end="url(#arr-amber)"/>
+  <text x="778" y="305" font-family="'Inter', sans-serif" font-size="9" fill="#fbbf24" opacity="0.7">requires</text>
+  <text x="778" y="317" font-family="'Inter', sans-serif" font-size="7" fill="#fbbf24" opacity="0.45">B2</text>
+
+  <!-- Capacity → Work  "enables" -->
+  <path d="M780,405 C760,440 720,475 675,495" stroke="#34d399" stroke-width="1.5" fill="none" stroke-opacity="0.4" marker-end="url(#arr-green)"/>
+  <text x="740" y="455" font-family="'Inter', sans-serif" font-size="9" fill="#34d399" opacity="0.6">enables</text>
+
+  <!-- Work → Evidence  "produces" -->
+  <path d="M640,525 C590,555 530,580 490,600" stroke="#34d399" stroke-width="1.5" fill="none" stroke-opacity="0.5" marker-end="url(#arr-green)"/>
+  <text x="565" y="568" font-family="'Inter', sans-serif" font-size="9" fill="#34d399" opacity="0.7">produces</text>
+
+  <!-- Decision → Evidence  "evaluates" -->
+  <path d="M420,420 C430,480 450,550 460,580" stroke="#34d399" stroke-width="1.5" fill="none" stroke-opacity="0.4" marker-end="url(#arr-green)"/>
+  <text x="425" y="510" font-family="'Inter', sans-serif" font-size="9" fill="#34d399" opacity="0.6">evaluates</text>
+
+  <!-- Authority → Decision  "legitimizes" -->
+  <path d="M220,280 C270,310 340,360 390,385" stroke="#fbbf24" stroke-width="2" fill="none" stroke-opacity="0.5" marker-end="url(#arr-amber)"/>
+  <text x="285" y="330" font-family="'Inter', sans-serif" font-size="9" fill="#fbbf24" opacity="0.7">legitimizes</text>
+
+  <!-- Authority → Authority  "delegates" (enforced by B5) — self-loop -->
+  <path d="M155,255 C100,220 100,290 155,275" stroke="#fbbf24" stroke-width="1.5" fill="none" stroke-opacity="0.4" marker-end="url(#arr-amber)"/>
+  <text x="88" y="258" font-family="'Inter', sans-serif" font-size="8" fill="#fbbf24" opacity="0.6">delegates</text>
+  <text x="88" y="270" font-family="'Inter', sans-serif" font-size="7" fill="#fbbf24" opacity="0.4">B5</text>
+
+  <!-- Account → Decision  "contextualizes" (enforced by B4) -->
+  <path d="M225,500 C280,470 340,430 390,405" stroke="#34d399" stroke-width="2" fill="none" stroke-opacity="0.5" marker-end="url(#arr-green)"/>
+  <text x="280" y="455" font-family="'Inter', sans-serif" font-size="9" fill="#34d399" opacity="0.7">contextualizes</text>
+  <text x="280" y="467" font-family="'Inter', sans-serif" font-size="7" fill="#34d399" opacity="0.45">B4</text>
+
+  <!-- Account → Evidence  "records" -->
+  <path d="M215,525 C290,560 380,590 440,600" stroke="#34d399" stroke-width="1.5" fill="none" stroke-opacity="0.35" marker-end="url(#arr-green)"/>
+  <text x="320" y="575" font-family="'Inter', sans-serif" font-size="9" fill="#34d399" opacity="0.5">records</text>
+
+  <!-- Authority → primitives  "governs" (faint, generic) -->
+  <path d="M195,285 C220,330 300,380 390,395" stroke="#a78bfa" stroke-width="1" fill="none" stroke-opacity="0.15" stroke-dasharray="4,4"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- CONSTRAINT — special cross-cutting ring  -->
+  <!-- ════════════════════════════════════════ -->
+  <ellipse cx="440" cy="395" rx="340" ry="240" fill="none" stroke="#f472b6" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="6,4"/>
+  <text x="810" y="190" font-family="'Inter', sans-serif" font-size="11" fill="#f472b6" opacity="0.6" font-weight="500">Constraint</text>
+  <text x="810" y="204" font-family="'Inter', sans-serif" font-size="9" fill="#f472b6" opacity="0.4">constrains all primitives</text>
+  <text x="810" y="216" font-family="'Inter', sans-serif" font-size="7" fill="#f472b6" opacity="0.35">enforced by B6</text>
+
+  <!-- Dashed lines from Constraint label to orbit -->
+  <line x1="810" y1="220" x2="778" y2="230" stroke="#f472b6" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="3,3"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- PRIMITIVE NODES                          -->
+  <!-- ════════════════════════════════════════ -->
+
+  <!-- Intent -->
+  <circle cx="480" cy="155" r="30" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="480" y="151" font-family="'Inter', sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle" font-weight="600">Intent</text>
+  <text x="480" y="165" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">the why</text>
+
+  <!-- Authority -->
+  <circle cx="175" cy="265" r="30" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="175" y="261" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" text-anchor="middle" font-weight="600">Authority</text>
+  <text x="175" y="275" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">who decides</text>
+
+  <!-- Commitment -->
+  <circle cx="715" cy="230" r="32" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="715" y="224" font-family="'Inter', sans-serif" font-size="10" fill="#93c5fd" text-anchor="middle" font-weight="600">Commit-</text>
+  <text x="715" y="236" font-family="'Inter', sans-serif" font-size="10" fill="#93c5fd" text-anchor="middle" font-weight="600">ment</text>
+  <text x="715" y="250" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">the promise</text>
+
+  <!-- Decision — larger, center of gravity -->
+  <circle cx="410" cy="395" r="36" fill="#1e293b" stroke="#e2e8f0" stroke-width="2.5"/>
+  <text x="410" y="391" font-family="'Inter', sans-serif" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="700">Decision</text>
+  <text x="410" y="407" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">the binding choice</text>
+
+  <!-- Capacity -->
+  <circle cx="790" cy="380" r="28" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="790" y="377" font-family="'Inter', sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle" font-weight="600">Capacity</text>
+  <text x="790" y="391" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">what's available</text>
+
+  <!-- Account -->
+  <circle cx="185" cy="505" r="30" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="185" y="501" font-family="'Inter', sans-serif" font-size="11" fill="#6ee7b7" text-anchor="middle" font-weight="600">Account</text>
+  <text x="185" y="515" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">the context</text>
+
+  <!-- Work -->
+  <circle cx="660" cy="500" r="28" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="660" y="497" font-family="'Inter', sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle" font-weight="600">Work</text>
+  <text x="660" y="511" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">the action</text>
+
+  <!-- Evidence -->
+  <circle cx="465" cy="600" r="30" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="465" y="596" font-family="'Inter', sans-serif" font-size="11" fill="#6ee7b7" text-anchor="middle" font-weight="600">Evidence</text>
+  <text x="465" y="610" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">the proof</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- LEGEND                                   -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="60" y="660" width="840" height="40" rx="8" fill="#1e293b" fill-opacity="0.3"/>
+  <text x="80" y="677" font-family="'Inter', sans-serif" font-size="8" fill="#475569" font-weight="600" letter-spacing="0.1em">EDGE TYPES</text>
+
+  <line x1="170" y1="677" x2="195" y2="677" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="200" y="680" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Motivation</text>
+
+  <line x1="280" y1="677" x2="305" y2="677" stroke="#fbbf24" stroke-width="2"/>
+  <text x="310" y="680" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Authorization</text>
+
+  <line x1="410" y1="677" x2="435" y2="677" stroke="#34d399" stroke-width="1.5"/>
+  <text x="440" y="680" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Knowledge flow</text>
+
+  <line x1="550" y1="677" x2="575" y2="677" stroke="#f472b6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="580" y="680" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Constraint (cross-cutting)</text>
+
+  <text x="770" y="680" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">B<tspan font-style="italic">n</tspan> = enforced by invariant</text>
+
+  <!-- Footer -->
+  <text x="480" y="715" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · Nine Core Primitives · Thirteen Typed Relationships</text>
+</svg>

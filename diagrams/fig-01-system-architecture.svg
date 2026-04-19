@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="layer1-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="layer2-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="layer3-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="720" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 1</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">How a Decision Moves Through the System</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Three layers — from raw inputs to accumulated organizational knowledge</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 1: DECISION INPUTS                -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="60" y="105" width="840" height="155" rx="16" fill="url(#layer1-fill)" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Layer label -->
+  <text x="80" y="130" font-family="'Inter', sans-serif" font-size="12" fill="#3b82f6" font-weight="600" letter-spacing="0.05em">Decision Inputs</text>
+  <text x="80" y="145" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Every decision begins with four questions</text>
+
+  <!-- Four question cards -->
+  <!-- Why -->
+  <rect x="80" y="162" width="186" height="80" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+  <text x="173" y="192" font-family="'Inter', sans-serif" font-size="18" fill="#93c5fd" text-anchor="middle" font-weight="300" font-style="italic">Why?</text>
+  <text x="173" y="212" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Intent — the reason</text>
+  <text x="173" y="226" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">this is being done</text>
+
+  <!-- What do we know -->
+  <rect x="282" y="162" width="186" height="80" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+  <text x="375" y="192" font-family="'Inter', sans-serif" font-size="18" fill="#93c5fd" text-anchor="middle" font-weight="300" font-style="italic">How do we know?</text>
+  <text x="375" y="212" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Evidence — the basis</text>
+  <text x="375" y="226" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">for believing it's true</text>
+
+  <!-- Who decides -->
+  <rect x="484" y="162" width="186" height="80" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+  <text x="577" y="192" font-family="'Inter', sans-serif" font-size="18" fill="#93c5fd" text-anchor="middle" font-weight="300" font-style="italic">Who decides?</text>
+  <text x="577" y="212" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Authority — the legitimate</text>
+  <text x="577" y="226" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">power to choose</text>
+
+  <!-- What's off limits -->
+  <rect x="686" y="162" width="186" height="80" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+  <text x="779" y="192" font-family="'Inter', sans-serif" font-size="18" fill="#93c5fd" text-anchor="middle" font-weight="300" font-style="italic">What's off limits?</text>
+  <text x="779" y="212" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Constraints — the boundaries</text>
+  <text x="779" y="226" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">that cannot be crossed</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FLOW ARROWS: Layer 1 → Layer 2          -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Converging flow lines -->
+  <path d="M173,260 C173,280 480,280 480,300" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-opacity="0.35"/>
+  <path d="M375,260 C375,278 480,278 480,300" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-opacity="0.35"/>
+  <path d="M577,260 C577,278 480,278 480,300" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-opacity="0.35"/>
+  <path d="M779,260 C779,280 480,280 480,300" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-opacity="0.35"/>
+
+  <!-- Convergence point -->
+  <circle cx="480" cy="300" r="4" fill="#3b82f6" opacity="0.5"/>
+
+  <!-- Transition label -->
+  <text x="560" y="298" font-family="'Inter', sans-serif" font-size="9" fill="#475569" font-style="italic">inputs converge for validation</text>
+
+  <!-- Down arrow -->
+  <line x1="480" y1="304" x2="480" y2="330" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.4"/>
+  <polygon points="475,328 480,338 485,328" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 2: GOVERNANCE SUBSTRATE            -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="60" y="345" width="840" height="170" rx="16" fill="url(#layer2-fill)" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Layer label -->
+  <text x="80" y="370" font-family="'Inter', sans-serif" font-size="12" fill="#f59e0b" font-weight="600" letter-spacing="0.05em">Governance Substrate</text>
+  <text x="80" y="385" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Active infrastructure — enforces constraints at the point of decision</text>
+
+  <!-- Three function cards -->
+  <!-- Store -->
+  <rect x="80" y="400" width="250" height="95" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#92400e" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="110" cy="430" r="16" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="110" y="435" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24" text-anchor="middle">◉</text>
+  <text x="140" y="428" font-family="'Inter', sans-serif" font-size="13" fill="#fbbf24" font-weight="500">Store</text>
+  <text x="140" y="444" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Primitive records &amp; governance graph</text>
+  <text x="100" y="472" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every primitive instance is persisted.</text>
+  <text x="100" y="484" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every relationship is recorded.</text>
+
+  <!-- Validate -->
+  <rect x="355" y="400" width="250" height="95" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#92400e" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="385" cy="430" r="16" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="385" y="435" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24" text-anchor="middle">◈</text>
+  <text x="415" y="428" font-family="'Inter', sans-serif" font-size="13" fill="#fbbf24" font-weight="500">Validate</text>
+  <text x="415" y="444" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Constraint shape evaluation</text>
+  <text x="375" y="472" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every input is checked against active</text>
+  <text x="375" y="484" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">constraints before it can proceed.</text>
+
+  <!-- Transform -->
+  <rect x="630" y="400" width="250" height="95" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#92400e" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="660" cy="430" r="16" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="660" y="436" font-family="'Inter', sans-serif" font-size="16" fill="#fbbf24" text-anchor="middle">→</text>
+  <text x="690" y="428" font-family="'Inter', sans-serif" font-size="13" fill="#fbbf24" font-weight="500">Transform</text>
+  <text x="690" y="444" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">State transitions</text>
+  <text x="650" y="472" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Validated inputs produce new state.</text>
+  <text x="650" y="484" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">The organization's world model updates.</text>
+
+  <!-- Bidirectional connectors between substrate functions -->
+  <line x1="330" y1="447" x2="355" y2="447" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+  <line x1="605" y1="447" x2="630" y2="447" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FLOW ARROWS: Layer 2 → Layer 3          -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Diverging flow lines -->
+  <line x1="480" y1="515" x2="480" y2="545" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.4"/>
+  <polygon points="475,543 480,553 485,543" fill="#10b981" opacity="0.5"/>
+  <text x="560" y="542" font-family="'Inter', sans-serif" font-size="9" fill="#475569" font-style="italic">state accumulates over time</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 3: ORGANIZATIONAL WORLD MODEL      -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="60" y="560" width="840" height="130" rx="16" fill="url(#layer3-fill)" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Layer label -->
+  <text x="80" y="585" font-family="'Inter', sans-serif" font-size="12" fill="#10b981" font-weight="600" letter-spacing="0.05em">Organizational World Model</text>
+  <text x="80" y="600" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Accumulated state — enables forward projection from full decision lineage</text>
+
+  <!-- Two capability cards -->
+  <!-- Decision Lineage -->
+  <rect x="80" y="614" width="390" height="58" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#065f46" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="275" y="638" font-family="'Inter', sans-serif" font-size="13" fill="#34d399" text-anchor="middle" font-weight="500">Decision Lineage Graph</text>
+  <text x="275" y="656" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">A directed acyclic graph of every decision, its inputs, and its consequences</text>
+
+  <!-- Projection -->
+  <rect x="490" y="614" width="390" height="58" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#065f46" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="685" y="638" font-family="'Inter', sans-serif" font-size="13" fill="#34d399" text-anchor="middle" font-weight="500">Projection Engine</text>
+  <text x="685" y="656" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Forward projection over primitive state — "what happens if?"</text>
+
+  <!-- Bidirectional connector -->
+  <line x1="470" y1="643" x2="490" y2="643" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+
+  <!-- Footer -->
+  <text x="480" y="710" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · Three-Layer Architecture</text>
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="960" height="680">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="680" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 14</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">DBI Perimeter Map</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Four-layer observation model — where has the organizational world model extended its reach?</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CENTER: DOMAIN-AGNOSTIC CORE                 -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Core circle -->
+  <circle cx="480" cy="350" r="80" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-width="2"/>
+  <text x="480" y="335" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="700">Domain-Agnostic</text>
+  <text x="480" y="352" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="700">Core</text>
+  <text x="480" y="375" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">19 primitives</text>
+  <text x="480" y="390" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">9 invariances</text>
+  <text x="480" y="405" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">5 tiers</text>
+
+  <!-- Perimeter ring -->
+  <circle cx="480" cy="350" r="170" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="8,4" stroke-opacity="0.4"/>
+  <text x="480" y="160" font-family="'Inter', sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="600" letter-spacing="0.08em">PERIMETER — EXTENSION TOPOLOGY</text>
+
+  <!-- Outer observation ring -->
+  <circle cx="480" cy="350" r="250" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,6" stroke-opacity="0.25"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FIVE EXTENSION MECHANISMS                    -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Methodology Translations (top) -->
+  <rect x="380" y="105" width="200" height="55" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#10b981" stroke-width="1.5"/>
+  <text x="480" y="128" font-family="'Inter', sans-serif" font-size="11" fill="#6ee7b7" text-anchor="middle" font-weight="600">Methodology Translations</text>
+  <text x="480" y="148" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Work-domain structure → primitives (§20)</text>
+  <line x1="480" y1="164" x2="480" y2="180" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Ontology Alignments (top-right) -->
+  <rect x="680" y="180" width="210" height="55" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="785" y="203" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle" font-weight="600">Ontology Alignments</text>
+  <text x="785" y="223" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">External vocabularies → grammar (§19)</text>
+  <line x1="680" y1="220" x2="650" y2="260" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Governance Frameworks (right) -->
+  <rect x="700" y="380" width="210" height="55" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="805" y="403" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" text-anchor="middle" font-weight="600">Governance Frameworks</text>
+  <text x="805" y="423" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Regulatory + control structures (§12)</text>
+  <line x1="700" y1="400" x2="650" y2="380" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- AI Delegation Scopes (bottom-left) -->
+  <rect x="60" y="420" width="210" height="55" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="165" y="443" font-family="'Inter', sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle" font-weight="600">AI Delegation Scopes</text>
+  <text x="165" y="463" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Autonomous operation boundaries (§A1)</text>
+  <line x1="270" y1="440" x2="310" y2="395" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Constraint Sets (top-left) -->
+  <rect x="60" y="200" width="210" height="55" rx="10" fill="#1e293b" fill-opacity="0.7" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="165" y="223" font-family="'Inter', sans-serif" font-size="11" fill="#f9a8d4" text-anchor="middle" font-weight="600">Constraint Sets</text>
+  <text x="165" y="243" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Invariant enforcement config (§5)</text>
+  <line x1="270" y1="235" x2="310" y2="290" stroke="#f472b6" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOUR OBSERVATION LAYERS (bottom)             -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="510" width="840" height="125" rx="14" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="480" y="535" font-family="'Inter', sans-serif" font-size="10" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="0.1em">FOUR OBSERVATION LAYERS</text>
+
+  <!-- Layer 1 -->
+  <text x="100" y="560" font-family="'Inter', sans-serif" font-size="10" fill="#93c5fd" font-weight="600">Layer 1: Anchor</text>
+  <text x="215" y="560" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">External classification (NAICS, scale, market, jurisdiction)</text>
+
+  <!-- Layer 2 -->
+  <text x="100" y="582" font-family="'Inter', sans-serif" font-size="10" fill="#6ee7b7" font-weight="600">Layer 2: Perimeter</text>
+  <text x="225" y="582" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Actual extension topology — which domains, what depth, what mechanisms</text>
+
+  <!-- Layer 3 -->
+  <text x="100" y="604" font-family="'Inter', sans-serif" font-size="10" fill="#fcd34d" font-weight="600">Layer 3: Edge</text>
+  <text x="195" y="604" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Properties of each extension — depth per tier, health, activity</text>
+
+  <!-- Layer 4 -->
+  <text x="100" y="626" font-family="'Inter', sans-serif" font-size="10" fill="#c4b5fd" font-weight="600">Layer 4: Collective</text>
+  <text x="230" y="626" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Cross-instance topology — category formation, network effects</text>
+
+  <!-- Footer -->
+  <text x="480" y="675" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §10 Dimensional Business Index · Perimeter Map · Four Observation Layers</text>
+</svg>

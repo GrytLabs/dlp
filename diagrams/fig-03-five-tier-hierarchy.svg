@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 740" width="960" height="740">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="740" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 3</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">The Five-Tier Primitive Hierarchy</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">19 primitives organized by activation requirements — from always-on to organizational choice</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TIER 1 — CORE IRREDUCIBLE               -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="105" width="860" height="165" rx="14" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Tier label -->
+  <text x="70" y="128" font-family="'Inter', sans-serif" font-size="12" fill="#3b82f6" font-weight="600">Tier 1 — Core Irreducible</text>
+  <text x="70" y="143" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Always required · Cannot be decomposed further</text>
+  <text x="880" y="128" font-family="'Inter', sans-serif" font-size="22" fill="#3b82f6" text-anchor="end" font-weight="300" opacity="0.3">9</text>
+
+  <!-- 9 primitive chips — two rows for breathing room -->
+  <!-- Row 1: 5 chips -->
+  <rect x="70"  y="158" width="150" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="145" y="184" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Intent</text>
+
+  <rect x="232" y="158" width="150" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="307" y="184" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Commitment</text>
+
+  <rect x="394" y="158" width="150" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="469" y="184" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Capacity</text>
+
+  <rect x="556" y="158" width="150" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="631" y="184" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Work</text>
+
+  <rect x="718" y="158" width="150" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="793" y="184" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Evidence</text>
+
+  <!-- Row 2: 4 chips -->
+  <rect x="70"  y="210" width="192" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="166" y="236" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Decision</text>
+
+  <rect x="274" y="210" width="192" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="370" y="236" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Authority</text>
+
+  <rect x="478" y="210" width="192" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="574" y="236" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="500">Account</text>
+
+  <rect x="682" y="210" width="186" height="42" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1" stroke-dasharray="5,3" stroke-opacity="0.6"/>
+  <text x="775" y="236" font-family="'Inter', sans-serif" font-size="12" fill="#fcd34d" text-anchor="middle" font-weight="500">Constraint</text>
+  <text x="775" y="248" font-family="'Inter', sans-serif" font-size="7" fill="#fbbf24" text-anchor="middle" opacity="0.5">cross-cutting</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TIER 2 — INFRASTRUCTURE                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="285" width="860" height="100" rx="14" fill="#06b6d4" fill-opacity="0.05" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <text x="70" y="308" font-family="'Inter', sans-serif" font-size="12" fill="#06b6d4" font-weight="600">Tier 2 — Infrastructure</text>
+  <text x="70" y="323" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Always required · Structural plumbing for addressing and scoping</text>
+  <text x="880" y="308" font-family="'Inter', sans-serif" font-size="22" fill="#06b6d4" text-anchor="end" font-weight="300" opacity="0.3">4</text>
+
+  <rect x="70"  y="338" width="196" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="168" y="361" font-family="'Inter', sans-serif" font-size="12" fill="#67e8f9" text-anchor="middle" font-weight="500">Identifier</text>
+
+  <rect x="278" y="338" width="196" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="376" y="361" font-family="'Inter', sans-serif" font-size="12" fill="#67e8f9" text-anchor="middle" font-weight="500">Entity</text>
+
+  <rect x="486" y="338" width="196" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="584" y="361" font-family="'Inter', sans-serif" font-size="12" fill="#67e8f9" text-anchor="middle" font-weight="500">Context</text>
+
+  <rect x="694" y="338" width="196" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="792" y="361" font-family="'Inter', sans-serif" font-size="12" fill="#67e8f9" text-anchor="middle" font-weight="500">Namespace</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MANDATORY / MATURITY-GATED BOUNDARY      -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="50" y1="410" x2="910" y2="410" stroke="#ef4444" stroke-width="2" stroke-dasharray="10,5" stroke-opacity="0.6"/>
+  <rect x="340" y="400" width="280" height="20" rx="4" fill="#0f172a"/>
+  <text x="480" y="414" font-family="'Inter', sans-serif" font-size="10" fill="#ef4444" text-anchor="middle" font-weight="600" letter-spacing="0.03em">ALWAYS ON  ▲  ·  ▼  ACTIVATED WHEN READY</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TIER 3 — GOVERNED OPERATIONS             -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="435" width="860" height="100" rx="14" fill="#8b5cf6" fill-opacity="0.05" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <text x="70" y="458" font-family="'Inter', sans-serif" font-size="12" fill="#8b5cf6" font-weight="600">Tier 3 — Governed Operations</text>
+  <text x="70" y="473" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Maturity-gated · Activated when the organization demonstrates readiness</text>
+  <text x="880" y="458" font-family="'Inter', sans-serif" font-size="22" fill="#8b5cf6" text-anchor="end" font-weight="300" opacity="0.3">3</text>
+
+  <rect x="70"  y="488" width="264" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="202" y="511" font-family="'Inter', sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="500">Orientation</text>
+
+  <rect x="348" y="488" width="264" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="480" y="511" font-family="'Inter', sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="500">Learning</text>
+
+  <rect x="626" y="488" width="264" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="758" y="511" font-family="'Inter', sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="500">Activation</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TIER 4 — AI-NATIVE                       -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="550" width="860" height="90" rx="14" fill="#10b981" fill-opacity="0.04" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <text x="70" y="573" font-family="'Inter', sans-serif" font-size="12" fill="#10b981" font-weight="600">Tier 4 — AI-Native</text>
+  <text x="70" y="588" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">AI actor-gated · Activated when AI agents participate in governance</text>
+  <text x="880" y="573" font-family="'Inter', sans-serif" font-size="22" fill="#10b981" text-anchor="end" font-weight="300" opacity="0.3">2</text>
+
+  <rect x="70"  y="600" width="415" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="278" y="620" font-family="'Inter', sans-serif" font-size="12" fill="#6ee7b7" text-anchor="middle" font-weight="500">Interpretation</text>
+
+  <rect x="497" y="600" width="393" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="694" y="620" font-family="'Inter', sans-serif" font-size="12" fill="#6ee7b7" text-anchor="middle" font-weight="500">Environment Interface</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TIER 5 — CONFIGURATION                   -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="655" width="860" height="60" rx="14" fill="#f59e0b" fill-opacity="0.04" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.25"/>
+
+  <text x="70" y="678" font-family="'Inter', sans-serif" font-size="12" fill="#f59e0b" font-weight="600">Tier 5 — Configuration</text>
+  <text x="70" y="693" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">Organizational choice · Temporal structuring is optional</text>
+  <text x="880" y="678" font-family="'Inter', sans-serif" font-size="22" fill="#f59e0b" text-anchor="end" font-weight="300" opacity="0.3">1</text>
+
+  <rect x="348" y="674" width="264" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="480" y="694" font-family="'Inter', sans-serif" font-size="12" fill="#fcd34d" text-anchor="middle" font-weight="500">Cycle</text>
+
+  <!-- Footer -->
+  <text x="480" y="735" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · 19 Primitives · 5 Tiers · Tiers 1–2 mandatory, Tiers 3–5 activation-gated</text>
+</svg>

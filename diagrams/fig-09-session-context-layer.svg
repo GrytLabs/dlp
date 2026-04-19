@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#60a5fa"/>
+    </marker>
+    <marker id="arr-g" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#34d399"/>
+    </marker>
+    <marker id="arr-r" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#ef4444"/>
+    </marker>
+    <marker id="arr-sl" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="700" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 9</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Session Context Layer — State Machine</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Five states, five gates — concurrency and isolation model for governed operations</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STATE MACHINE                                -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- REQUESTED -->
+  <rect x="60" y="200" width="160" height="90" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#64748b" stroke-width="2"/>
+  <text x="140" y="235" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="700">Requested</text>
+  <text x="140" y="258" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Session requested,</text>
+  <text x="140" y="272" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">not yet authorized</text>
+
+  <!-- Gate 1: Session Authorization -->
+  <rect x="240" y="215" width="120" height="30" rx="6" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="234" font-family="'Inter', sans-serif" font-size="8" fill="#93c5fd" text-anchor="middle" font-weight="600">Gate: Authorize</text>
+
+  <!-- Arrow: Requested → Active -->
+  <path d="M365,230 L405,230" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ACTIVE -->
+  <rect x="410" y="180" width="180" height="100" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="500" y="215" font-family="'Inter', sans-serif" font-size="14" fill="#93c5fd" text-anchor="middle" font-weight="700">Active</text>
+  <text x="500" y="238" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Open session — changes</text>
+  <text x="500" y="252" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">within isolation boundary</text>
+  <text x="500" y="270" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle" font-style="italic">Scope validated at entry (Gate 2)</text>
+
+  <!-- Gate 3: Merge Request -->
+  <rect x="610" y="215" width="120" height="30" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <text x="670" y="234" font-family="'Inter', sans-serif" font-size="8" fill="#6ee7b7" text-anchor="middle" font-weight="600">Gate: Merge Req</text>
+
+  <!-- Arrow: Active → Merging -->
+  <path d="M735,230 L775,230" stroke="#34d399" stroke-width="2" fill="none" marker-end="url(#arr-g)"/>
+
+  <!-- MERGING -->
+  <rect x="780" y="180" width="140" height="100" rx="14" fill="#1e293b" fill-opacity="0.7" stroke="#10b981" stroke-width="2"/>
+  <text x="850" y="215" font-family="'Inter', sans-serif" font-size="14" fill="#6ee7b7" text-anchor="middle" font-weight="700">Merging</text>
+  <text x="850" y="238" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Review + validate</text>
+  <text x="850" y="252" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">for canonical record</text>
+  <text x="850" y="270" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle" font-style="italic">B1-B10 re-evaluated</text>
+
+  <!-- Arrow: Merging → Merged -->
+  <path d="M850,285 L850,365" stroke="#34d399" stroke-width="2" fill="none" marker-end="url(#arr-g)"/>
+
+  <!-- Gate 4: Merge Validation -->
+  <rect x="865" y="310" width="90" height="40" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <text x="910" y="326" font-family="'Inter', sans-serif" font-size="7" fill="#6ee7b7" text-anchor="middle" font-weight="600">Gate: Validate</text>
+  <text x="910" y="340" font-family="'Inter', sans-serif" font-size="7" fill="#6ee7b7" text-anchor="middle">+ Authority review</text>
+
+  <!-- MERGED (terminal) -->
+  <rect x="780" y="370" width="140" height="80" rx="14" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-width="2"/>
+  <text x="850" y="400" font-family="'Inter', sans-serif" font-size="14" fill="#6ee7b7" text-anchor="middle" font-weight="700">Merged</text>
+  <text x="850" y="420" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Admitted to canonical</text>
+  <text x="850" y="436" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" text-anchor="middle" opacity="0.6">Terminal</text>
+
+  <!-- Arrow: Merging → Active (merge rejected) -->
+  <path d="M780,260 C730,310 650,310 595,270" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr-r)"/>
+  <text x="680" y="308" font-family="'Inter', sans-serif" font-size="8" fill="#fca5a5" text-anchor="middle">rejected</text>
+
+  <!-- REJECTED (from Requested) -->
+  <path d="M140,295 L140,370" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arr-sl)"/>
+  <rect x="70" y="375" width="140" height="55" rx="10" fill="#1e293b" fill-opacity="0.3" stroke="#64748b" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="140" y="400" font-family="'Inter', sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">Rejected</text>
+  <text x="140" y="418" font-family="'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Authorization denied</text>
+
+  <!-- ABANDONED (from Active) -->
+  <path d="M500,285 L500,370" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arr-sl)"/>
+  <rect x="430" y="375" width="140" height="75" rx="10" fill="#1e293b" fill-opacity="0.3" stroke="#64748b" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="500" y="400" font-family="'Inter', sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">Abandoned</text>
+  <text x="500" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#475569" text-anchor="middle">Changes retained for</text>
+  <text x="500" y="432" font-family="'Inter', sans-serif" font-size="9" fill="#475569" text-anchor="middle">audit trail, not merged</text>
+  <text x="500" y="443" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Terminal</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACCESS MODES (bottom-left)                   -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="490" width="410" height="120" rx="14" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="515" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">THREE ACCESS MODES</text>
+
+  <text x="100" y="542" font-family="'Inter', sans-serif" font-size="11" fill="#93c5fd" font-weight="600">Editable</text>
+  <text x="180" y="542" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Read + write within session scope</text>
+
+  <text x="100" y="564" font-family="'Inter', sans-serif" font-size="11" fill="#c4b5fd" font-weight="600">Reviewable</text>
+  <text x="195" y="564" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Read + annotate another session's changes</text>
+
+  <text x="100" y="586" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8" font-weight="600">Reference</text>
+  <text x="190" y="586" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Read-only access to canonical record</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LOCK TYPES (bottom-right)                    -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="490" y="490" width="410" height="120" rx="14" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="510" y="515" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">THREE LOCK TYPES</text>
+
+  <text x="530" y="542" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" font-weight="600">Object lock</text>
+  <text x="625" y="542" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Single governed object — duration of edit</text>
+
+  <text x="530" y="564" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" font-weight="600">Scope lock</text>
+  <text x="618" y="564" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">All objects in namespace — duration of session</text>
+
+  <text x="530" y="586" font-family="'Inter', sans-serif" font-size="11" fill="#fcd34d" font-weight="600">Merge lock</text>
+  <text x="622" y="586" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Canonical partition — serializes merges</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- KEY INVARIANT (bottom band)                  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="630" width="840" height="40" rx="8" fill="#451a03" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="480" y="650" font-family="'Inter', sans-serif" font-size="10" fill="#fbbf24" text-anchor="middle" font-weight="600">No unsessioned writes — all modifications must occur within a session context</text>
+  <text x="480" y="663" font-family="'Inter', sans-serif" font-size="8" fill="#fcd34d" text-anchor="middle" opacity="0.7">Truth type promotion cannot occur during merge — standard promotion workflow (§6.3) applies after merge</text>
+
+  <!-- Footer -->
+  <text x="480" y="695" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §30 Session Context Layer · Five States · Five Gates · Three Locks</text>
+</svg>

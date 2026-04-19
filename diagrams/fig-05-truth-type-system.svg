@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" width="960" height="780">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="promo-glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="up-arrow" markerWidth="8" markerHeight="6" refX="4" refY="0" orient="auto">
+      <polygon points="0 6, 4 0, 8 6" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="780" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 5</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">The Truth Type System</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Four epistemic levels with a one-way promotion path — and why AI output cannot self-promote</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEFT SIDE: THE PROMOTION LADDER             -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Section label -->
+  <text x="85" y="115" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.1em">EPISTEMIC HIERARCHY</text>
+
+  <!-- Promotion arrow background -->
+  <rect x="64" y="135" width="8" height="430" rx="4" fill="url(#promo-glow)"/>
+  <line x1="68" y1="565" x2="68" y2="140" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" marker-end="url(#up-arrow)"/>
+  <text x="68" y="580" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" text-anchor="middle" opacity="0.5">promotion</text>
+  <text x="68" y="590" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" text-anchor="middle" opacity="0.5">direction</text>
+
+  <!-- ─── AUTHORITATIVE (top) ─── -->
+  <rect x="90" y="135" width="460" height="100" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#3b82f6" stroke-width="2"/>
+  <text x="110" y="162" font-family="'Inter', sans-serif" font-size="16" fill="#93c5fd" font-weight="600">Authoritative</text>
+  <text x="110" y="182" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Canonical, append-only record.</text>
+  <text x="110" y="198" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Official decisions, commitments, and policy.</text>
+  <text x="110" y="218" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Written only by humans with explicit authority. Can be superseded, never modified.</text>
+
+  <!-- Promotion arrow: Declared → Authoritative -->
+  <line x1="320" y1="255" x2="320" y2="240" stroke="#10b981" stroke-width="2" stroke-opacity="0.5" marker-end="url(#up-arrow)"/>
+  <text x="340" y="252" font-family="'Inter', sans-serif" font-size="8" fill="#10b981" opacity="0.6">explicit human action</text>
+
+  <!-- ─── DECLARED ─── -->
+  <rect x="90" y="265" width="460" height="100" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="110" y="292" font-family="'Inter', sans-serif" font-size="16" fill="#c4b5fd" font-weight="600">Declared</text>
+  <text x="110" y="312" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Human assertion — best current understanding.</text>
+  <text x="110" y="328" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Often produced with AI assistance, always human-owned.</text>
+  <text x="110" y="348" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Versioned — can be updated as new information arrives.</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- B10 GATE — the key insight                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="90" y="378" width="460" height="52" rx="8" fill="#451a03" fill-opacity="0.4" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="90" y="378" width="460" height="52" rx="8" fill="none" stroke="#f59e0b" stroke-width="0.5" stroke-dasharray="4,2" stroke-opacity="0.3"/>
+
+  <!-- Gate icon -->
+  <text x="110" y="402" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24">⊘</text>
+  <text x="132" y="400" font-family="'Inter', sans-serif" font-size="12" fill="#fbbf24" font-weight="700">B10 — Human Review Gate</text>
+  <text x="132" y="418" font-family="'Inter', sans-serif" font-size="10" fill="#fcd34d">AI-generated content cannot pass this boundary without human judgment</text>
+
+  <!-- Promotion arrow: Derived → B10 gate -->
+  <line x1="320" y1="445" x2="320" y2="435" stroke="#10b981" stroke-width="2" stroke-opacity="0.5" marker-end="url(#up-arrow)"/>
+
+  <!-- ─── DERIVED ─── -->
+  <rect x="90" y="455" width="460" height="100" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#10b981" stroke-width="2"/>
+  <text x="110" y="482" font-family="'Inter', sans-serif" font-size="16" fill="#6ee7b7" font-weight="600">Derived</text>
+  <text x="110" y="502" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">AI-generated content in staging.</text>
+  <text x="110" y="518" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Available for human review, not for direct operational use.</text>
+  <text x="110" y="538" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Ephemeral — expires after configured period or upon promotion.</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- OPAQUE — separate, not on the ladder        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="90" y="590" width="460" height="80" rx="12" fill="#1e293b" fill-opacity="0.4" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="110" y="617" font-family="'Inter', sans-serif" font-size="16" fill="#94a3b8" font-weight="600">Opaque</text>
+  <text x="110" y="637" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Behind an inspection boundary that cannot be crossed.</text>
+  <text x="110" y="653" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Does not participate in promotion. Persistent until boundary is removed.</text>
+
+  <!-- Separator between promotion ladder and opaque -->
+  <text x="545" y="585" font-family="'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="end" font-style="italic">outside the promotion path ↓</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RIGHT SIDE: FOUR ORTHOGONAL VOCABULARIES    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="610" y="115" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.1em">FOUR ORTHOGONAL VOCABULARIES</text>
+  <text x="610" y="132" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Every governed object carries values from each — independently</text>
+
+  <!-- Vocab 1: Truth Type (highlighted) -->
+  <rect x="610" y="150" width="310" height="80" rx="10" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="630" y="172" font-family="'Inter', sans-serif" font-size="12" fill="#93c5fd" font-weight="600">Truth Type</text>
+  <text x="630" y="189" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Epistemic origin</text>
+  <text x="630" y="214" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Authoritative · Declared · Derived · Opaque</text>
+
+  <!-- Vocab 2: Verification State -->
+  <rect x="610" y="245" width="310" height="80" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1"/>
+  <text x="630" y="267" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0" font-weight="500">Verification State</text>
+  <text x="630" y="284" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Verification outcome</text>
+  <text x="630" y="309" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Unverified · Pending · Verified · Failed · Cannot</text>
+
+  <!-- Vocab 3: Claims Graduation -->
+  <rect x="610" y="340" width="310" height="80" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1"/>
+  <text x="630" y="362" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0" font-weight="500">Claims Graduation</text>
+  <text x="630" y="379" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Maturation lifecycle</text>
+  <text x="630" y="404" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Asserted · Investigating · Corroborated ·</text>
+  <text x="630" y="415" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Verified · Graduated</text>
+
+  <!-- Vocab 4: Record Lifecycle -->
+  <rect x="610" y="435" width="310" height="65" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1"/>
+  <text x="630" y="457" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0" font-weight="500">Record Lifecycle</text>
+  <text x="630" y="474" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Operational currency</text>
+  <text x="630" y="492" font-family="'SF Mono', monospace" font-size="9" fill="#64748b">Active · Superseded</text>
+
+  <!-- Orthogonality note -->
+  <rect x="610" y="520" width="310" height="48" rx="8" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="765" y="540" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle" font-style="italic">These vocabularies are orthogonal —</text>
+  <text x="765" y="556" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle" font-style="italic">transitions in one do not force transitions in another</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- B10 EXPLAINER — bottom section              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="60" y="695" width="840" height="60" rx="10" fill="#451a03" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="480" y="718" font-family="'Inter', sans-serif" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="600">Why B10 matters</text>
+  <text x="480" y="738" font-family="'Inter', sans-serif" font-size="10" fill="#fcd34d" text-anchor="middle" opacity="0.8">Without B10, a system could classify AI output as Derived and then auto-promote it — trivially satisfying the rules</text>
+  <text x="480" y="750" font-family="'Inter', sans-serif" font-size="10" fill="#fcd34d" text-anchor="middle" opacity="0.8">while bypassing human judgment. B10 structurally closes this gap. No architectural path exists for self-promotion.</text>
+
+  <!-- Footer -->
+  <text x="480" y="775" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · Truth Type System · Four Orthogonal Vocabularies · B10 AI Epistemic Promotion Gateway</text>
+</svg>

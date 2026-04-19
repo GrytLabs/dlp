@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 740" width="960" height="740">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="740" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="38" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="0.15em">FIG. 8</text>
+  <text x="480" y="62" font-family="'Inter', sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="600">Actor Type Taxonomy</text>
+  <text x="480" y="82" font-family="'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Four governance categories — what each actor type may do within the substrate's authority model</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HUMAN — full width, primary                  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="110" width="840" height="130" rx="14" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="138" font-family="'Inter', sans-serif" font-size="16" fill="#93c5fd" font-weight="700">Human</text>
+  <text x="205" y="138" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Full governance capability — the only type that can assert genesis authority</text>
+
+  <!-- Human capabilities grid -->
+  <text x="100" y="168" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0" font-weight="600">Authority</text>
+  <text x="100" y="184" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Inherent or delegated</text>
+
+  <text x="280" y="168" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0" font-weight="600">Truth Types</text>
+  <text x="280" y="184" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Full range: Authoritative, Declared, Derived</text>
+  <text x="280" y="198" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" font-style="italic">Opaque is system-assigned (§6.1)</text>
+
+  <text x="560" y="168" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0" font-weight="600">Principal</text>
+  <text x="560" y="184" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Yes — can own instances</text>
+
+  <text x="730" y="168" font-family="'Inter', sans-serif" font-size="10" fill="#e2e8f0" font-weight="600">RACIVG Roles</text>
+  <text x="730" y="184" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">All six: R, A, C, I, V, G</text>
+
+  <text x="100" y="220" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Career-spanning Actor Context — governance portfolio persists across instances and organizational changes</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- B10 BOUNDARY                                 -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="252" width="840" height="38" rx="8" fill="#451a03" fill-opacity="0.4" stroke="#f59e0b" stroke-width="2"/>
+  <text x="480" y="269" font-family="'Inter', sans-serif" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="700">B10 — Human Review Gate</text>
+  <text x="480" y="283" font-family="'Inter', sans-serif" font-size="9" fill="#fcd34d" text-anchor="middle">AI-generated content cannot cross this boundary without human judgment — no self-promotion</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- THREE AI TYPES                               -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- AI-Automation -->
+  <rect x="60" y="305" width="270" height="185" rx="14" fill="#1e293b" fill-opacity="0.6" stroke="#10b981" stroke-width="1.5"/>
+  <text x="80" y="333" font-family="'Inter', sans-serif" font-size="14" fill="#6ee7b7" font-weight="700">AI-Automation</text>
+  <text x="80" y="353" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Deterministic rule execution</text>
+  <text x="80" y="373" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">No judgment, no ambiguity</text>
+  <text x="80" y="390" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">if/then logic, workflow triggers</text>
+
+  <text x="80" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#10b981" font-weight="600">Authority:</text>
+  <text x="148" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Delegated (narrow)</text>
+  <text x="80" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#10b981" font-weight="600">Truth type:</text>
+  <text x="155" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Derived only</text>
+  <text x="80" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#10b981" font-weight="600">Roles:</text>
+  <text x="120" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">R, I, V (automated)</text>
+  <text x="80" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#10b981" font-weight="600">HITL:</text>
+  <text x="112" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">No (rule-governed)</text>
+  <text x="80" y="482" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" font-style="italic">No graduation</text>
+
+  <!-- AI-Agentic -->
+  <rect x="345" y="305" width="270" height="185" rx="14" fill="#1e293b" fill-opacity="0.6" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="365" y="333" font-family="'Inter', sans-serif" font-size="14" fill="#67e8f9" font-weight="700">AI-Agentic</text>
+  <text x="365" y="353" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Goal-directed, bounded autonomy</text>
+  <text x="365" y="373" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Handles ambiguity, selects approaches</text>
+  <text x="365" y="390" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Composes actions within delegation</text>
+
+  <text x="365" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#06b6d4" font-weight="600">Authority:</text>
+  <text x="433" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Delegated (bounded)</text>
+  <text x="365" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#06b6d4" font-weight="600">Truth type:</text>
+  <text x="440" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Derived only</text>
+  <text x="365" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#06b6d4" font-weight="600">Roles:</text>
+  <text x="405" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">R, C, I, V (automated)</text>
+  <text x="365" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#06b6d4" font-weight="600">HITL:</text>
+  <text x="397" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Computed (5 dimensions)</text>
+  <text x="365" y="482" font-family="'Inter', sans-serif" font-size="8" fill="#67e8f9" font-style="italic">Graduation eligible: A → B → C</text>
+
+  <!-- AI-Assistive -->
+  <rect x="630" y="305" width="270" height="185" rx="14" fill="#1e293b" fill-opacity="0.6" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="650" y="333" font-family="'Inter', sans-serif" font-size="14" fill="#c4b5fd" font-weight="700">AI-Assistive</text>
+  <text x="650" y="353" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Human-directed augmentation</text>
+  <text x="650" y="373" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Suggests, drafts, surfaces</text>
+  <text x="650" y="390" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Human decides — always</text>
+
+  <text x="650" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#a855f7" font-weight="600">Authority:</text>
+  <text x="718" y="418" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Under human's authority</text>
+  <text x="650" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#a855f7" font-weight="600">Truth type:</text>
+  <text x="725" y="435" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Derived only</text>
+  <text x="650" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#a855f7" font-weight="600">Roles:</text>
+  <text x="690" y="452" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">I only</text>
+  <text x="650" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#a855f7" font-weight="600">HITL:</text>
+  <text x="682" y="469" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Always (outputs to staging)</text>
+  <text x="650" y="482" font-family="'Inter', sans-serif" font-size="8" fill="#64748b" font-style="italic">No graduation — always assistive</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SHARED CONSTRAINTS                           -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="510" width="840" height="55" rx="10" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="533" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">ALL AI TYPES — STRUCTURAL CONSTRAINTS</text>
+  <text x="80" y="553" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Cannot assert genesis authority · Cannot write Authoritative or Declared records · Cannot own substrate instances · Cannot hold Accountable (A) or Governs (G) roles</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACTOR CONTEXT PORTABILITY (bottom)           -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect x="60" y="585" width="840" height="105" rx="14" fill="#1e293b" fill-opacity="0.3" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="610" font-family="'Inter', sans-serif" font-size="10" fill="#475569" font-weight="600" letter-spacing="0.08em">ACTOR CONTEXT — CROSS-INSTANCE IDENTITY</text>
+
+  <text x="100" y="635" font-family="'Inter', sans-serif" font-size="10" fill="#93c5fd" font-weight="600">Human</text>
+  <text x="165" y="635" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Career-spanning. Decisions, authority, learning, commitments persist across all instances.</text>
+
+  <text x="100" y="658" font-family="'Inter', sans-serif" font-size="10" fill="#6ee7b7" font-weight="600">AI</text>
+  <text x="125" y="658" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Version-persistent. Trust + performance carry forward across upgrades. Regression detectable.</text>
+
+  <text x="100" y="678" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" font-style="italic">Organizations mount to Actor Context — the identity belongs to the actor, not the organization. Portability is architectural.</text>
+
+  <!-- Footer -->
+  <text x="480" y="735" font-family="'Inter', sans-serif" font-size="9" fill="#334155" text-anchor="middle">Decision Lineage Protocol · §22 Actor Layer · Four Actor Types · RACIVG Accountability · B10 Human Review Gate</text>
+</svg>
